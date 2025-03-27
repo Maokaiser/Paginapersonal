@@ -1,103 +1,117 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import yo from "@/src/yo.jpg"
+import sobremi from "@/src/Sobremi.png"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      <div>
+        <nav className="flex justify-center py-9 px-20 bg-[#131111]">
+          <div className="flex text-[#13A8AD]">
+            <a href="#" className="mr-4">Inicio</a>
+            <a href="#" className="mr-4">Sobre mí</a>
+            <a href="#" className="mr-4">Experiencias</a>
+            <a href="#" className="mr-4">Proyectos</a>
+          </div>
+        </nav>
+      </div>
+      <div className="flex flex-col justify-start min-h-screen py-2 pt-32 px-20 bg-[#DDDDDD]">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <Card className="p-4">
+          <div className="flex justify-around ">
+            <div className="relative">
+              {/* <Image src={yo} alt="yo" width={400} height={400} className="rounded-full" /> */}
+              <Avatar className="rounded-full w-50 h-50 sm:w-58 sm:h-58 md:w-66 md:h-66 lg:w-74 lg:h-74">
+                <AvatarImage src="https://github.com/shadcn.png" alt="yo" />
+                <AvatarFallback>
+                  CHV
+                </AvatarFallback>
+              </Avatar>
+              {/* Div superpuesto */}
+              <div className="absolute top-65 left-10 bg-[#13A8AD] text-white w-55 h-10 rounded-lg">
+                <p className="text-xl text-center justify-center align-center">Cristobal Herrera Vega</p>
+              </div>
+            </div>
+            <div className="text-justify w-2/3">
+              {`Estoy en busca de una oportunidad laboral como desarrollador, ya que soy un ingeniero en informática con más de un año de experiencia en desarrollo web y mobile, a lo largo de mi vida desarrollado buenas habilidades en programación y una gran pasión por la tecnología. Aunque mi nivel de inglés no es completamente fluido, estoy seguro de que puedo comunicarme de manera efectiva y aprender rápidamente para mejorar en ese aspecto.
+            
+            Como graduado en ingeniería informática, tengo una sólida formación en programación y en el desarrollo de software. Durante mis estudios, he adquirido habilidades en lenguajes de programación como JavaScript, Python y TypeScript, y he aprendido a trabajar con bases de datos y sistemas operativos. Además, he trabajado en varios proyectos durante mi tiempo en la universidad, lo que me ha permitido desarrollar mi capacidad de resolución de problemas y trabajar en equipo.
+
+            Estoy ansioso a aprender nuevas tecnologías y trabajar duro para adquirir la experiencia necesaria para tener éxito en el campo de la tecnología. Mi entusiasmo y dedicación por la programación, junto con mi formación académica, me hacen un candidato ideal.`.split('.').map((sentence, index) => (
+                <p key={index} className="mb-2">
+                  {sentence.trim() && `${sentence.trim()}.`}
+                </p>
+              ))}
+            </div>
+          </div>
+          {/* <div className="mt-8 flex justify-end">
+          <Button variant="secondary" size="lg">
+            Get started
+          </Button>
+        </div> */}
+        </Card>
+        <div className="flex flex-row justify-between mt-4 space-x-5">
+          <Card className="p-4 mt-4 min-w-1/3">
+            <h2 className="text-2xl font-bold">Sobre mi</h2>
+            <div className="mt-4">
+              <h3 className="text-xl font-bold">Ingeniero en informatica </h3>
+              <p className="text-sm text-gray-500">Licenciado en ciencias de la compuetación</p>
+              <p className="mt-8 text-justify">
+                Ingeniero informático titulado de la universidad Bernardo O’Higgins.
+                Experiencia en desarrollo web y móvil.
+                Conocimientos en lenguajes de programación como JavaScript, Python y TypeScript.
+                Experiencia en el diseño y desarrollo de aplicaciones web y móviles.
+                Experiencia en el trabajo con bases de datos y sistemas operativos.
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <Button variant="secondary" size="lg" className="bg-[#13A8AD] text-white">
+                Ver más
+              </Button>
+            </div>
+          </Card>
+          <Card className="p-4 mt-4 min-w-1/3">
+            <h2 className="text-2xl font-bold">Proyectos</h2>
+            <div className="mt-4">
+              <h3 className="text-xl font-bold">He participado en diversos proyectos </h3>
+              <p className="text-sm text-gray-500">Principalmente academicos</p>
+              <p className="mt-8 text-justify">
+                Estos proyectos han sido principalmente académicos, en los cuales he trabajado en equipo para desarrollar aplicaciones web y móviles.
+                Algunos de los proyectos en los que he participado incluyen el desarrollo de una aplicación web para comprobar estado de tarjeta bip mediante una API
+                y el desarrollo de una aplicación móvil la cual detecta noticias que son potencialmente falsas haciendo uso de IA.
+
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <Button variant="secondary" size="lg" className="bg-[#13A8AD] text-white">
+                Ver más
+              </Button>
+            </div>
+          </Card>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <Card className="p-4 mt-10 min-w-1/2">
+          <h2 className="text-2xl font-bold">Experiencias</h2>
+          <div className="mt-4">
+            <h3 className="text-xl font-bold">Mi paso por el mundo laboral</h3>
+            <p className="text-sm text-gray-500">Lugares donde he trabajado y lo que he aprendido</p>
+            <p className="mt-8">
+              Si bien tengo poca experiencia laboral, he trabajado en un par de enmpresas en las cuales he aprendido mucho.
+              En mi primer trabajo (practica laboral en este caso), en la empresa de desarrollo de software para fotografos "Aprazzi" tuve la oportunidad de trabajar en el desarrollo de aplicaciones web y móviles.
+              En mi segundo trabajo, en la empresa de desarrollo de software para mineras "Psinet" tuve la oportunidad de trabajar como analista de datos, llevando acabo proyectos con IA principalmete.
+            </p>
+          </div>
+          <div className="flex justify-end">
+            <Button variant="secondary" size="lg" className="bg-[#13A8AD] text-white">
+              Ver más
+            </Button>
+          </div>
+        </Card>
+      </div>
     </div>
+
+
   );
 }
