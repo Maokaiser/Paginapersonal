@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import yo from "@/src/yo.jpg"
@@ -11,10 +11,10 @@ export default function Home() {
       <div>
         <nav className="flex justify-center py-9 px-20 bg-[#131111]">
           <div className="flex text-[#13A8AD]">
-            <a href="#" className="mr-4">Inicio</a>
-            <a href="#" className="mr-4">Sobre mí</a>
-            <a href="#" className="mr-4">Experiencias</a>
-            <a href="#" className="mr-4">Proyectos</a>
+            <a href="/" className="mr-4">Inicio</a>
+            <a href="/sobremi" className="mr-4">Sobre mí</a>
+            <a href="/experiencias" className="mr-4">Experiencias</a>
+            <a href="/proyectos" className="mr-4">Proyectos</a>
           </div>
         </nav>
       </div>
@@ -68,8 +68,10 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-end">
-              <Button variant="secondary" size="lg" className="bg-[#13A8AD] text-white">
-                Ver más
+              <Button variant="default" size="lg" className="bg-[#13A8AD] text-white" asChild>
+                <a href="/sobremi" rel="noopener noreferrer">
+                  Ver más
+                </a>
               </Button>
             </div>
           </Card>
@@ -86,8 +88,10 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-end">
-              <Button variant="secondary" size="lg" className="bg-[#13A8AD] text-white">
-                Ver más
+              <Button variant="default" size="lg" className="bg-[#13A8AD] text-white">
+                <a href="/proyectos" rel="noopener noreferrer">
+                  Ver más
+                </a>
               </Button>
             </div>
           </Card>
@@ -104,8 +108,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-end">
-            <Button variant="secondary" size="lg" className="bg-[#13A8AD] text-white">
-              Ver más
+            <Button variant="default" size="lg" className="bg-[#13A8AD] text-white">
+              <a href="/experiencias" rel="noopener noreferrer">
+                Ver más
+              </a>
             </Button>
           </div>
         </Card>
