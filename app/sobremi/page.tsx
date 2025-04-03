@@ -6,15 +6,15 @@ export default function Sobremi() {
     return (
         <div>
             <div>
-            <nav className="flex justify-center py-9 px-20 bg-[#131111]">
-                <div className="flex text-[#13A8AD]">
-                    <a href="/" className="mr-4">Inicio</a>
-                    <a href="/sobremi" className="mr-4">Sobre mí</a>
-                    <a href="/experiencias" className="mr-4">Experiencias</a>
-                    <a href="/proyectos" className="mr-4">Proyectos</a>
-                </div>
-            </nav>
-        </div>
+                <nav className="flex justify-center py-9 px-20 bg-[#131111] ">
+                    <div className="flex text-[#13A8AD]">
+                        <a href="/" className="mr-20">Inicio</a>
+                        <a href="/sobremi" className="mr-20">Sobre mí</a>
+                        <a href="/experiencias" className="mr-20">Experiencias</a>
+                        <a href="/proyectos" className="mr-20">Proyectos</a>
+                    </div>
+                </nav>
+            </div>
             <div className="flex flex-row py-20 pt-32 px-20 bg-[#DDDDDD] min-h-screen">
                 <Card className="p-10 mt-4 w-2/3">
                     <div className="flex justify-center relative flex-col items-center">
