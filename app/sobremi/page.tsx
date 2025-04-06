@@ -19,7 +19,7 @@ export default function Sobremi() {
                 <Card className="p-10 mt-4 w-2/3">
                     <div className="flex justify-center relative flex-col items-center">
                         <Avatar className="rounded-full w-50 h-50 sm:w-58 sm:h-58 md:w-66 md:h-66 lg:w-74 lg:h-74">
-                            <AvatarImage src="https://github.com/shadcn.png" alt="yo" />
+                            <AvatarImage src={yo.src} alt="yo" />
                             <AvatarFallback>
                                 CHV
                             </AvatarFallback>

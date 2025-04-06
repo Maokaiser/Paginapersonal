@@ -51,14 +51,16 @@ export default function Experiencias() {
                         <div className="">
                             <p className="text-justify text-base md:text-lg lg:text-xl">
                                 Empresa la cual hace proyectos tecnologicos al sector minero, donde trabajé como Analista de Datos.
+                                                                <br />
                                 <br />
-                                <br />
+                                Tambien estaban dentro de mis funciones el automatizar procesos que se hacian de forma manual, como la carga de datos o la comprobación de resultados de modelos.
                                 En esta empresa trabajé con datos de sensores, donde aprendí a trabajar con datos en tiempo real y a desarrollar aplicaciones web para visualizar los datos.
                                 <br />
                                 <br />
-                                Tambien estaban dentro de mis funciones el automatizar procesos que se hacian de forma manual, como la carga de datos o la comprobación de resultados de modelos.
+                                Además tuve la oportunidad de trabajar directamente con los clientes, lo que me permitió aprender a comunicarme de forma efectiva y a entender las necesidades de los clientes.
                                 <br />
                                 <br />
+                                Finalmente en un proyecto me incorporé como desarrollador full stack, donde desarrollé un flujo completo de un proyecto.
                                 
                             </p>
                         </div>
