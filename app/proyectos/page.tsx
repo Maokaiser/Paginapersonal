@@ -59,7 +59,7 @@ export default function Experiencias() {
                                 Pero esta vez queria usar nuevas tecnologías como React y Next.js. ademas de el uso de API's para el manejo de datos.
                                 <br />
                                 <br />
-                                El objetivo de esta pagina era ver el uso de API's y el manejo de datos, en la cual se podia visualizar el saldo real que contenia la tarjeta bip.
+                                El objetivo de esta pagina era ver el uso de API&rsquo;s y el manejo de datos, en la cual se podia visualizar el saldo real que contenia la tarjeta bip.
                                 <br />
                                 <br />
                                 Además de tener un añadido de un mapa, el cual mostraba los buses cercanos a la ubicacion del usuario.
