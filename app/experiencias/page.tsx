@@ -25,7 +25,7 @@ export default function Experiencias() {
                         <div className="">
                             <p className="text-justify text-base md:text-lg lg:text-xl">
                                 Empresa centrada en una aplicacion para fotografos de eventos, en la cual fui desarrollador full stack.
-                                <br />
+                                <br/>
                                 <br /> 
                                 La aplicación fue hecha en Ionic 6 y Angular, con una base de datos en Firebase.
                                 <br />

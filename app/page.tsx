@@ -24,7 +24,7 @@ export default function Home() {
           <div className="flex justify-around ">
             <div className="relative">
               {/* <Image src={yo} alt="yo" width={400} height={400} className="rounded-full" /> */}
-              <Avatar className=" w-50 h-50 sm:w-58 sm:h-58 md:w-66 md:h-66 lg:w-74 lg:h-74">
+              <Avatar className="w-50 h-50 sm:w-58 sm:h-58 md:w-66 md:h-66 lg:w-74 lg:h-74">
                 <AvatarImage src={yo.src} alt="yo" />
                 <AvatarFallback>
                   CHV
