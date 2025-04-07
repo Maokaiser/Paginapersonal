@@ -56,7 +56,7 @@ export default function Experiencias() {
                                 Segundo proyecto en el que participé, el cual fue creado como proyecto universitario. hecha en HTML, CSS y JS.
                                 <br />
                                 <br />
-                                Pero esta vez queria usar nuevas tecnologías como React y Next.js. ademas de el uso de API's para el manejo de datos.
+                                Pero esta vez queria usar nuevas tecnologías como React y Next.js. ademas de el uso de API&rsquo;s para el manejo de datos.
                                 <br />
                                 <br />
                                 El objetivo de esta pagina era ver el uso de API&rsquo;s y el manejo de datos, en la cual se podia visualizar el saldo real que contenia la tarjeta bip.
@@ -84,7 +84,7 @@ export default function Experiencias() {
                                 Ha sido el desafio mas grande al que me he enfrentado ya que fue el primer proyecto en el que use IA como principal funcionamiento de este.
                                 <br />
                                 <br />
-                                Fue una aplicación movil hecha con Ionic 5 y Angular, haciendo uso de API's para consultar resultados de la IA, la cual se encargaba
+                                Fue una aplicación movil hecha con Ionic 5 y Angular, haciendo uso de API&rsquo;s para consultar resultados de la IA, la cual se encargaba
                                 de califiar noticas en reales, falsas u opiniones.
                                 <br />
                                 <br />
