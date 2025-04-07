@@ -35,7 +35,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-justify w-2/3 m-10 text-xl">
-              Ingeniero informático titulado de la universidad Bernardo O Higgins.
+              Ingeniero informático titulado de la universidad Bernardo O&rsquo;Higgins.
               Participación en cursos de Excel, creación de macros, visual Basic, metodologías agiles, Django e inglés.
               Experiencia en proyectos de programación web (React y nodeJS) y móvil (Angular con Ionic 6).
               En su tiempo libre ha probado tecnologías tales como React (nextJS), MongoDB y Python.
@@ -98,8 +98,8 @@ export default function Home() {
             <p className="text-sm text-gray-500">Lugares donde he trabajado y lo que he aprendido</p>
             <p className="mt-8">
               Si bien tengo poca experiencia laboral, he trabajado en un par de enmpresas en las cuales he aprendido mucho.
-              En mi primer trabajo (practica laboral en este caso), en la empresa de desarrollo de software para fotografos "Aprazzi" tuve la oportunidad de trabajar en el desarrollo de aplicaciones web y móviles.
-              En mi segundo trabajo, en la empresa de desarrollo de software para mineras "Psinet" tuve la oportunidad de trabajar como analista de datos, llevando acabo proyectos con IA principalmete.
+              En mi primer trabajo (practica laboral en este caso), en la empresa de desarrollo de software para fotografos &quot;Aprazzi&quot; tuve la oportunidad de trabajar en el desarrollo de aplicaciones web y móviles.
+              En mi segundo trabajo, en la empresa de desarrollo de software para mineras &quot;Psinet&quot; tuve la oportunidad de trabajar como analista de datos, llevando acabo proyectos con IA principalmete.
             </p>
           </div>
           <div className="flex justify-end">
