@@ -1,19 +1,20 @@
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import yo from "@/src/yo.jpg";
+import Link from "next/link";
 
 export default function Sobremi() {
     return (
         <div>
             <div>
-                <nav className="flex justify-center py-9 px-20 bg-[#131111] ">
-                    <div className="flex text-[#13A8AD]">
-                        <a href="/" className="mr-20">Inicio</a>
-                        <a href="/sobremi" className="mr-20">Sobre mí</a>
-                        <a href="/experiencias" className="mr-20">Experiencias</a>
-                        <a href="/proyectos" className="mr-20">Proyectos</a>
-                    </div>
-                </nav>
+            <nav className="flex justify-center py-9 px-20 bg-[#131111] ">
+                <div className="flex text-[#13A8AD]">
+                    <Link href="/" className="mr-20">Inicio</Link>
+                    <Link href="/sobremi" className="mr-20">Sobre mí</Link>
+                    <Link href="/experiencias" className="mr-20">Experiencias</Link>
+                    <Link href="/proyectos" className="mr-20">Proyectos</Link>
+                </div>
+            </nav>
             </div>
             <div className="flex flex-row py-20 pt-32 px-20 bg-[#DDDDDD] min-h-screen">
                 <Card className="p-10 mt-4 w-2/3">
@@ -42,7 +43,7 @@ export default function Sobremi() {
                 </Card>
                 <div className="flex flex-col py-2 pt-0 px-20 w-12/10 h-full">
                     <Card className="p-4 mt-4 min-w-1/3 min-h-30%">
-                        <h2 className="text-2xl font-bold">Universidad Bernardo O'Higgins </h2>
+                        <h2 className="text-2xl font-bold">Universidad Bernardo O&rsquo;Higgins </h2>
                         <div className="mt-4">
                             <h3 className="text-xl text-gray-500">Ingeniero en informatica - Licenciado en las ciencias de la computación </h3>
                             <p className="text-justify mt-2"> Comencé mi carrera universitaria en marzo de 2019, logrando titularme aprobando la tesis en enero de 2023

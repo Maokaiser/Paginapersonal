@@ -1,19 +1,19 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import petlooking from "@/src/petlooking.png";
 import bip from "@/src/bip.png";
 import stopching from "@/src/stopching.png";
+import Link from "next/link";
 
 export default function Experiencias() {
     return (
         <div className="bg-[#DDDDDD] min-h-screen">
             <nav className="flex justify-center py-9 px-20 bg-[#131111] ">
                 <div className="flex text-[#13A8AD]">
-                    <a href="/" className="mr-20">Inicio</a>
-                    <a href="/sobremi" className="mr-20">Sobre mí</a>
-                    <a href="/experiencias" className="mr-20">Experiencias</a>
-                    <a href="/proyectos" className="mr-20">Proyectos</a>
+                    <Link href="/" className="mr-20">Inicio</Link>
+                    <Link href="/sobremi" className="mr-20">Sobre mí</Link>
+                    <Link href="/experiencias" className="mr-20">Experiencias</Link>
+                    <Link href="/proyectos" className="mr-20">Proyectos</Link>
                 </div>
             </nav>
             <div>
@@ -26,7 +26,7 @@ export default function Experiencias() {
                         </div>
                     </div>
 
-                        <div className="">
+                        <div>
                             <p className="text-justify text-base md:text-lg lg:text-xl">
                                 Fue mi primera pagina web, la cual fue creada como proyecto universitario. hecha en HTML, CSS y JS.
                                 <br />
@@ -51,7 +51,7 @@ export default function Experiencias() {
                         </div>
                     </div>
 
-                        <div className="">
+                        <div>
                             <p className="text-justify text-base md:text-lg lg:text-xl">
                                 Segundo proyecto en el que participé, el cual fue creado como proyecto universitario. hecha en HTML, CSS y JS.
                                 <br />
@@ -76,7 +76,7 @@ export default function Experiencias() {
                             </div>
                         </div>
 
-                        <div className="">
+                        <div>
                             <p className="text-justify text-base md:text-lg lg:text-xl">
                                 Este ha sido el proyecto más importantes que he ralizado debido a que fue mi tesis de la carrera.
                                 <br />

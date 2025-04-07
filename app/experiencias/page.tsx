@@ -1,16 +1,17 @@
 import Image from "next/image"
 import apprazi from "@/src/apprazi.jpg"
 import psinet from "@/src/psinet.png"
+import Link from "next/link"
 
 export default function Experiencias() {
     return (
         <div>
             <nav className="flex justify-center py-9 px-20 bg-[#131111] ">
                 <div className="flex text-[#13A8AD]">
-                    <a href="/" className="mr-20">Inicio</a>
-                    <a href="/sobremi" className="mr-20">Sobre mí</a>
-                    <a href="/experiencias" className="mr-20">Experiencias</a>
-                    <a href="/proyectos" className="mr-20">Proyectos</a>
+                    <Link href="/" className="mr-20">Inicio</Link>
+                    <Link href="/sobremi" className="mr-20">Sobre mí</Link>
+                    <Link href="/experiencias" className="mr-20">Experiencias</Link>
+                    <Link href="/proyectos" className="mr-20">Proyectos</Link>
                 </div>
             </nav>
             <div className="flex flex-col min-h-screen py-10 px-50 bg-[#DDDDDD]">
@@ -22,7 +23,7 @@ export default function Experiencias() {
                         <div className=" rounded-full w-7/10 h-7/10 flex items-center justify-center mt-4">
                             <Image src={apprazi} alt="yo" width={400} height={400} className="rounded-full" />
                         </div>
-                        <div className="">
+                        <div >
                             <p className="text-justify text-base md:text-lg lg:text-xl">
                                 Empresa centrada en una aplicacion para fotografos de eventos, en la cual fui desarrollador full stack.
                                 <br/>
@@ -48,10 +49,10 @@ export default function Experiencias() {
                             <Image src={psinet} alt="yo" width={400} height={400}/>
                         </div>
 
-                        <div className="">
+                        <div>
                             <p className="text-justify text-base md:text-lg lg:text-xl">
                                 Empresa la cual hace proyectos tecnologicos al sector minero, donde trabajé como Analista de Datos.
-                                                                <br />
+                                <br />
                                 <br />
                                 Tambien estaban dentro de mis funciones el automatizar procesos que se hacian de forma manual, como la carga de datos o la comprobación de resultados de modelos.
                                 En esta empresa trabajé con datos de sensores, donde aprendí a trabajar con datos en tiempo real y a desarrollar aplicaciones web para visualizar los datos.
